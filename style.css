@@ -1,0 +1,115 @@
+/* ======== GERAL ======== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* ======== CONTAINER DO LOGIN ======== */
+
+.login-container {
+    background: #0f0f0f;
+    width: 420px;
+    padding: 40px;
+    border-radius: 22px;
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.6);
+}
+
+/* ======== TÍTULO ======== */
+
+.login-container h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.login-container h2::after {
+    content: "•";
+    color: #d946ef; /* rosinha neon */
+    margin-left: 6px;
+}
+
+/* ======== LABELS ======== */
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* ======== INPUTS ======== */
+
+input {
+    width: 100%;
+    padding: 12px;
+    background: #1c1c1c;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #d946ef;
+}
+
+/* ======== LINKS ======== */
+
+a {
+    color: #888;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d946ef;
+}
+
+/* link “esqueci a senha” */
+.forgot {
+    display: block;
+    text-align: right;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+/* link “criar conta” */
+.register {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ======== BOTÃO GRADIENTE ======== */
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+    background: linear-gradient(90deg, 
+        #d946ef,   /* rosa neon */
+        #fca311,   /* laranja */
+        #8b5cf6    /* roxo */
+    );
+    color: #fff;
+    transition: opacity .2s ease;
+}
+
+button:hover {
+    opacity: .85;
+}

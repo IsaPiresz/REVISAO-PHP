@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Crie sua conta</h2>
+
+    <form action="insert_user.php" method="POST">
+        <label>nome</label>
+        <input type="text" name="nome" required>
+
+        <label>email</label>
+        <input type="email" name="email" required>
+
+        <label>senha</label>
+        <input type="password" name="senha" required>
+
+        <button type="submit">Cadastrar</button>
+
+        <a class="register" href="login.php">já tenho uma conta</a>
+    </form>
+</div>
+
+</body>
+</html>
